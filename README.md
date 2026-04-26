@@ -170,15 +170,6 @@ python render.py \
   --skip_train
 ```
 
-Other render modes:
-
-```bash
-python render.py -m output/your_experiment --mode time
-python render.py -m output/your_experiment --mode view
-python render.py -m output/your_experiment --mode all
-python render.py -m output/your_experiment --mode pose
-```
-
 Rendered images are saved under:
 
 ```text
