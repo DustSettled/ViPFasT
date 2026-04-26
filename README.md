@@ -219,14 +219,6 @@ python seg.py -m output/your_experiment --K 3 --vis
 
 This is useful for inspecting motion groups or object-level dynamic components.
 
-## Current Implementation Notes
-
-- FastGS is enabled by default in the optimization parameters.
-- The training script constructs `DeformModel` with affine velocity enabled.
-- MPM loss is active when `warp-lang` is available and MPM is requested.
-- PINNs modules exist in `utils/`, but the PINNs loss block in `train_gui.py` is currently commented out.
-- `output/` contains generated experiments and should usually be excluded from source control in a clean release.
-
 ## Citation
 
 This repository uses and modifies components from 3D Gaussian Splatting and its CUDA rasterization pipeline. If you use this code for research, also cite the original 3DGS work and any relevant upstream methods used by your experiment.
